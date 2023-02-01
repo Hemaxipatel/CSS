@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            height: 250px;
+            width: 250px;
+        }
+
+        /* position relative & absolute are work together.
+           relative is like parent. absolute is like child
+           without relative, absolute can work according to the browser */
+        .main {
+            position: relative;
+        }
+
+        .div1 {
+            position: absolute;
+            top: 30px;
+            left: 10px;
+        }
+
+        .div2 {
+            position: absolute;
+            top: 90px;
+            left: 80px;
+        }
+
+        .div3 {
+            position: absolute;
+            top: 150px;
+            left: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="div1">
+            <img src="image/img1.jfif" alt="" class="img1" />
+        </div>
+        <div class="div2">
+            <img src="image/img2.jpg" alt="" class="img2" />
+        </div>
+        <div class="div3">
+            <img src="image/img3.jpg" alt="" class="img3" />
+        </div>
+    </div>
+</body>
+
+</html>

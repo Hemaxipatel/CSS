@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        .div1 {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .div2 {
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            z-index: 1;
+        }
+
+        .div3 {
+            position: absolute;
+            top: 150px;
+            left: 150px;
+        }
+
+        img {
+            height: 250px;
+            width: 250px;
+            margin-left: 550px;
+        }
+
+        /* set value as priority base.
+           give value only in numbers positive & negative  */
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <img src="image/img1.jfif" alt="" class="img1" />
+    </div>
+    <div class="div2">
+        <img src="image/img2.jpg" alt="" class="img2" />
+    </div>
+    <div class="div3">
+        <img src="image/img3.jpg" alt="" class="img3" />
+    </div>
+</body>
+
+</html>

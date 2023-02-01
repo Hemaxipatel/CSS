@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo classes</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        /* work with (:) single colon symbol */
+        .link1:link {
+            color: red;
+        }
+
+        /* it perform when we visited */
+        .link2:visited {
+            color: yellow;
+        }
+
+        /* it perform when we click on link  */
+        .link3:active {
+            color: greenyellow;
+        }
+
+        button {
+            height: 40px;
+            width: 100px;
+            font-weight: 600;
+            background-color: palevioletred;
+            color: white;
+            border: none;
+            border-radius: 7px;
+        }
+
+        button:hover {
+            background-color: cornflowerblue;
+            color: white;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="" class="link1" target="">HOME</a>
+    <a href="" class="link2" target="">HOME</a>
+    <a href="" class="link3" target="">HOME</a>
+    <button>Click Here</button>
+</body>
+
+</html>
