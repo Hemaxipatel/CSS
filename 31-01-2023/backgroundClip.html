@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Clip property</title>
+    <style>
+        .div1 {
+            height: auto;
+            width: 300px;
+            border: 2px dashed black;
+            padding: 25px;
+            background-color: aquamarine;
+            /* background-clip: border-box; */
+            /*set default - content,border,padding */
+            /* background-clip: content-box;  content */
+            background-clip: padding-box;
+            /* padding & content */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa eligendi quae nesciunt odit
+        pariatur cum dolor?
+        Harum libero maiores, laudantium dolorum debitis excepturi fugiat saepe facilis deserunt adipisci maxime ut!
+    </div>
+</body>
+
+</html>

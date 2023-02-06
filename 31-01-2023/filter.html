@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Property</title>
+    <style>
+        img {
+            height: 600px;
+            width: 100%;
+        }
+
+        /* filter property can apply only on image */
+        div {
+            /* filter: blur(3px); */
+            /* filter: brightness(90%);  set value in (%). zero(0) is black  */
+            /* filter: contrast(40%); */
+            /* filter: drop-shadow(5px 5px 5px darkblue); */
+            /* filter: grayscale(70%); */
+            /* set black & white on 100% */
+            /* filter: hue-rotate(60 deg); */
+            /* show different colors on image */
+            /* filter: invert(80%); */
+            /* 0 to 50% normal to grey effect after 50% to 100% set as negative roll */
+            /* filter: opacity(50%); */
+            /* filter: saturate(60%); */
+            /*show black & white on 0% */
+            filter: sepia(100%);
+            /*set yellow color effect on 100%*/
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="images/filter1.jpg" alt="" />
+    </div>
+</body>
+
+</html>
