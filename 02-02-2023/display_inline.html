@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display : Inline</title>
+    <style>
+        ul {
+            list-style: none;
+            /* background-color: blue; */
+        }
+
+        .list {
+            background-color: red;
+        }
+
+        /* display : inline does not count height & width.
+           it set content in one line */
+        li {
+            background-color: darkcyan;
+            display: inline;
+            padding: 20px;
+            height: 200px;
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="list">
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Services</li>
+            <li>Menu</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+</body>
+
+</html>
