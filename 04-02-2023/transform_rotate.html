@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform rotate</title>
+    <style>
+        div {
+            height: 150px;
+            width: 150px;
+            margin: 20px auto;
+            background-color: aquamarine;
+            transition: 1s all ease;
+        }
+
+        .div1:hover {
+            /* set value in 0 to 360 degree */
+            transform: rotate(360deg);
+        }
+
+        .div2:hover {
+            /* flip value in x-angle */
+            transform: rotateX(90deg);
+        }
+
+        .div3:hover {
+            /* flip value in y-angle */
+            transform: rotateY(328deg);
+        }
+
+        .div4:hover {
+            /* flip value in z-angle */
+            transform: rotateX(90deg) rotateY(180deg) rotateZ(250deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">Hello</div>
+    <div class="div2">Hello</div>
+    <div class="div3">Hello World</div>
+    <div class="div4">Hello World</div>
+</body>
+
+</html>

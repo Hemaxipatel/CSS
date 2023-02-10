@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display flex</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .flex-value {
+            /* background-color: blue; */
+            /* display: flex; */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .flex-value .flex-m {
+            margin: 0px 80px;
+        }
+
+        .flex-value .flex-p {
+            padding: 20px;
+        }
+
+        .flex-value .flex-block {
+            /* display: flex; */
+            padding: 14px;
+        }
+
+        .flex-value .flex-block .image {
+            display: flex;
+            padding: 20px;
+            flex: 2;
+        }
+
+        .flex-value .flex-block .image img {
+            height: 300px;
+            width: 450px;
+        }
+
+        .flex-value .flex-block .image-txt {
+            padding: 6px 61px;
+            line-height: 22px;
+            flex: 1;
+        }
+
+        .flex-value .flex-block .image-txt h2 {
+            font-weight: 900px;
+            font-size: 40px;
+            padding-bottom: 40px;
+        }
+
+        .flex-value .flex-block .image-txt p {
+            font-size: 25px;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="flex-value">
+        <div class="flex-m">
+            <div class="flex-p">
+                <div class="flex-block">
+                    <div class="image">
+                        <img src="images/img2.jpg" alt="" />
+                        <div class="image-txt">
+                            <h2>Interior that reflect your style</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, sapiente aut
+                                blanditiis porro nemo asperiores, consequatur non ratione magni culpa est, corporis a
+                                aperiam molestiae.</p>
+                            <p>Getting into the details with the design team, we found out some of the stories behind
+                                the product.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
