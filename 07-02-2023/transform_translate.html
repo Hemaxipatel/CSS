@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform translate</title>
+    <style>
+        div {
+            height: 150px;
+            width: 150px;
+            background-color: gold;
+            margin: 20px;
+            transition: 1s all ease;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        /* transform translate used to move content in x-axis & y-axis
+           if we can set the value in negative the position is move up side */
+        .div1:hover {
+            transform: translate(50px, 120px);
+        }
+
+        .div2:hover {
+            transform: translateX(50px);
+        }
+
+        .div3:hover {
+            transform: translateY(50px);
+        }
+
+        .div4:hover {
+            transform: translateX(50px) translateY(50px) rotate(360deg);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="main">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <div class="div4">Hello world</div>
+    </section>
+</body>
+
+</html>

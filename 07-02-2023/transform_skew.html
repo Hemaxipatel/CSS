@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform skew</title>
+    <style>
+        div {
+            height: 150px;
+            width: 150px;
+            background-color: darkgreen;
+            margin: 50px auto;
+            transition: 2s all ease;
+        }
+
+        /* skew work like rotate the angle */
+        .div1:hover {
+            transform: skew(40deg, 60deg);
+        }
+
+        .div2:hover {
+            transform: skewX(50deg);
+        }
+
+        .div3:hover {
+            transform: skewY(50deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+</body>
+
+</html>
