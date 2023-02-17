@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClipPath</title>
+    <style>
+        img {
+            height: 250px;
+            width: 250px;
+        }
+
+        .img1 {
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        }
+
+        .img2 {
+            clip-path: polygon(50% 0%, 69% 26%, 98% 35%, 80% 60%, 79% 91%, 50% 70%, 21% 91%, 18% 60%, 2% 35%, 28% 28%);
+        }
+
+        .img3 {
+            clip-path: circle(50% at 50% 50%);
+        }
+
+        .img4 {
+            clip-path: ellipse(50% 32% at 50% 50%);
+            /* clip-path: ellipse(50% 23% at 50% 50%); */
+            /* clip-path: ellipse(72% 23% at 50% 50%); */
+            /* clip-path: ellipse(51% 32% at 63% 50%) */
+            /* clip-path: ellipse(51% 32% at 63% 65%); */
+        }
+    </style>
+</head>
+
+<body>
+    <img src="img1.jpg" alt="" class="img1">
+
+    <img src="img1.jpg" alt="" class="img2">
+
+    <img src="img1.jpg" alt="" class="img3">
+
+    <img src="img1.jpg" alt="" class="img4">
+</body>
+
+</html>
