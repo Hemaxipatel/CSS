@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.save-us {
+    background-color: antiquewhite;
+}
+
+.container {
+    margin: 0px 80px;
+}
+
+.save-us .save-p {
+    padding: 50px 0px;
+}
+
+.save-us .animals {
+    display: flex;
+    gap: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.save-us .animals .animal-info {
+    flex: 1;
+}
+
+.save-us .animals .animal-info h4 {
+    color: gray;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.save-us .animals .animal-info h1 {
+    font-size: 37px;
+    color: rgb(24, 24, 24);
+    padding-bottom: 15px;
+}
+
+.save-us .animals .animal-info p {
+    color: gray;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+.save-us .animals .animal-info button {
+    height: 50px;
+    width: 150px;
+    background-color: #F42A2A;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    border: none;
+}
+
+.save-us .animals .animal-img {
+    flex: 1;
+}
+
+.save-us .animals .animal-img img {
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width:576px) {
+    .container {
+        margin: 0px 80px;
+    }
+
+    .save-us .save-p {
+        padding: 50px 0px;
+    }
+
+    .save-us .animals {
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    .save-us .animals .animal-info {
+        flex: 1;
+    }
+
+    .save-us .animals .animal-img img {
+        height: auto;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width:576px) {
+    .container {
+        margin: 0px 50px;
+    }
+
+    .save-us .animals {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+    }
+}
+
+@media (min-width:768px) {
+    /* it inherit min-width:576px value  */
+}
+
+@media (min-width:992px) {
+    .save-us .animals {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        margin: 0px 80px;
+    }
+}
