@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <style>
+        body {
+            background: conic-gradient(rgb(48, 237, 48), rgb(6, 247, 6), rgb(23, 245, 23), rgb(22, 188, 22), rgb(62, 251, 62), rgb(48, 237, 48));
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .main {
+            width: 520px;
+            height: auto;
+            margin: 50px 500px;
+            box-shadow: 0px 0px 2px 2px rgb(104, 103, 103);
+            background-color: white;
+        }
+
+        .container {
+            margin: 0px 40px;
+        }
+
+        .regi-p {
+            padding: 20px 0px;
+        }
+
+        .main form h1 {
+            padding-bottom: 20px;
+            padding-left: 80px;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .col-1 {
+            flex: 1;
+            justify-items: flex-start;
+        }
+
+        .col-2 {
+            flex: 2;
+            padding-bottom: 10px;
+        }
+
+        .col-2 input[type="text"],
+        [type="email"],
+        [type="textarea"],
+        [type="date"],
+        [type="password"],
+        select {
+            height: 30px;
+            width: 270px;
+            padding-left: 8px;
+            border-radius: 10px;
+            border: 2px solid gray;
+        }
+
+        .col-2 .input[type="radio"] {
+            height: 15px;
+            width: 15px;
+            padding-left: 8px;
+        }
+
+        .check-box {
+            padding-left: 148px;
+            padding-bottom: 20px;
+        }
+
+        button {
+            height: 40px;
+            width: 250px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            background-color: #000075;
+            color: white;
+            border: none;
+            transition: 2s all ease;
+        }
+
+        .btn1 {
+            padding-left: 100px;
+        }
+
+        button:hover {
+            /* transform: rotate(360deg); */
+            transform: scaleX(1.2);
+            border-top: 3px solid #2EFF2E;
+            border-bottom: 3px solid #2EFF2E;
+            background-color: #ED003E;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="regi-p">
+                <form action="" method="get" name="form1">
+                    <h1>Registration for Job</h1>
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="">First Name</label>
+                        </div>
+                        <div class="col-2">
+                            <input type="text" placeholder="Enter First name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="">Middle Name</label>
+                        </div>
+                        <div class="col-2">
+                            <input type="text" placeholder="Enter Middle name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="">Last Name</label>
+                        </div>
+                        <div class="col-2">
+                            <input type="text" placeholder="Enter Last name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="">Address</label>
+                        </div>
+                        <div class="col-2">
+                            <textarea name="" id="" cols="30" rows="5" placeholder="Enter Address"
+                                style="padding-left: 5px;" required></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="">Date of Birth</label>
+                        </div>
+                        <div class="col-2">
+                            <input type="date" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="">Gender</label>
+                        </div>
+                        <div class="col-2">
+                            <input type="radio" name="gender" id="">
+                            <label for="">Male</label>
+                            <input type="radio" name="gender" id="">
+                            <label for="">Female</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="">Experience</label>
+                        </div>
+                        <div class="col-2">
+                            <select name="" id="">
+                                <option value="">--------select--------</option>
+                                <option value="">Fresher</option>
+                                <option value="">6 months</option>
+                                <option value="">1 year</option>
+                                <option value="">3 year</option>
+                                <option value="">6 year</option>
+                                <option value="">above 6 years</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="">Mobile No</label>
+                        </div>
+                        <div class="col-2">
+                            <input type="text" placeholder="Enter Mobile No" minlength="10" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="">Email id</label>
+                        </div>
+                        <div class="col-2">
+                            <input type="email" placeholder="Enter email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="">Create Password</label>
+                        </div>
+                        <div class="col-2">
+                            <input type="password" placeholder="Enter Password" maxlength="10" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="check-box">
+                            <input type="checkbox" id="" name="">
+                            <label for="">show password</label>
+                        </div>
+                    </div>
+                    <div class="btn1">
+                        <button type="submit">Register</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

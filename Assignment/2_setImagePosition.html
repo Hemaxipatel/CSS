@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set img on particular position</title>
+    <style>
+        img {
+            height: 250px;
+            width: 250px;
+            border: 2px solid black;
+            margin: 20px 550px;
+        }
+
+        .main {
+            position: relative;
+        }
+
+        .div1 {
+            position: absolute;
+            top: 20px;
+            left: 10px;
+        }
+
+        .div2 {
+            position: absolute;
+            top: 80px;
+            left: 60px;
+        }
+
+        .div3 {
+            position: absolute;
+            top: 140px;
+            left: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="div1">
+            <img src="img1.jfif" alt="" class="img1">
+        </div>
+        <div class="div2">
+            <img src="img2.jfif" alt="" class="img2">
+        </div>
+        <div class="div3">
+            <img src="img3.jfif" alt="" class="img3">
+        </div>
+    </div>
+</body>
+
+</html>

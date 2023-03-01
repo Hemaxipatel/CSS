@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create image gallery & different transform effect</title>
+    <style>
+        .main {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin: 100px 0px;
+        }
+
+        img {
+            border: 3px solid #26C13F;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px black;
+            transition: 2s all ease;
+        }
+
+        .div1 img {
+            height: 250px;
+            width: 300px;
+        }
+
+        .div1:hover img {
+            transform: rotate(360deg);
+        }
+
+        .div2 img {
+            height: 250px;
+            width: 300px;
+        }
+
+        .div2:hover img {
+            transform: scale(1.1);
+            /* transform: scaleX(0.5) scaleY(0.5) scaleZ(1.5); */
+        }
+
+        .div3 img {
+            height: 250px;
+            width: 250px;
+        }
+
+        .div3:hover img {
+            transform: skewX(20deg);
+        }
+
+        .div4 img {
+            height: 200px;
+            width: 300px;
+        }
+
+        .div4:hover img {
+            filter: blur(1px);
+            transform: translate(50px, 80px);
+        }
+
+        .div5 img {
+            height: 220px;
+            width: 300px;
+        }
+
+        .div5:hover img {
+            transform: translateX(50px) translateY(80px) rotate(360deg);
+        }
+
+        .div6 img {
+            height: 220px;
+            width: 210px;
+        }
+
+        .div6:hover img {
+            transform: scaleX(0.5) scaleY(0.5) scaleZ(1);
+        }
+
+        .div7 img {
+            height: 250px;
+            width: 300px;
+        }
+
+        .div7:hover img {
+            transform: translateX(20px)rotate(40deg);
+        }
+
+        .div8 img {
+            height: 260px;
+            width: 250px;
+        }
+
+        .div8:hover img {
+            transform: matrix(1, 0.4, 1, 0.2, 0.1, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="main">
+        <div class="div1">
+            <img src="img6.jfif" alt="" class="img6">
+        </div>
+        <div class="div2">
+            <img src="img7.jfif" alt="" class="img7">
+        </div>
+        <div class="div3">
+            <img src="img8.jpeg" alt="" class="img8">
+        </div>
+        <div class="div4">
+            <img src="img9.jpg" alt="" class="img9">
+        </div>
+        <div class="div5">
+            <img src="img10.webp" alt="" class="img10">
+        </div>
+        <div class="div6">
+            <img src="img11.jpeg" alt="" class="img11">
+        </div>
+        <div class="div7">
+            <img src="img12.webp" alt="" class="img12">
+        </div>
+        <div class="div8">
+            <img src="img13.jpeg" alt="" class="img13">
+        </div>
+    </section>
+</body>
+
+</html>

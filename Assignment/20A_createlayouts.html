@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin: 0px 50px;
+        }
+
+        .layout-p {
+            padding: 50px 80px;
+        }
+
+        .main {
+            background-color: antiquewhite;
+        }
+
+        .layout-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .main .layout-grid .heading {
+            border: 2px solid gray;
+            box-shadow: 1px 2px 5px 2px gray;
+        }
+
+        .main .layout-grid .heading h3 {
+            background-color: black;
+            color: wheat;
+            height: auto;
+            padding: 30px 150px;
+            animation: flash;
+            /* referring directly to the animation's @keyframe declaration */
+            animation-duration: 2s;
+            /* don't forget to set a duration! */
+        }
+
+        .main .layout-grid .text p {
+            line-height: 20px;
+            padding: 10px 20px;
+            /* padding-left: 10px; */
+        }
+
+        button {
+            height: 30px;
+            width: 50px;
+        }
+
+        .btn1 {
+            padding: 20px 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="layout-p">
+                <div class="layout-grid">
+                    <div class="heading">
+                        <h3 class="animate__animated animate__flash">Thumbnail</h3>
+                        <div class="text">
+                            <p>This is wider card with supporting text below as a natural lead in to additional
+                                content.This
+                                content is a little big longer.This is wider card with supporting text below as a
+                                natural lead in to additional
+                                content.This
+                                content is a little big longer</p>
+                        </div>
+                        <div class="btn1">
+                            <button>View</button>
+                            <button>Edit</button>
+                        </div>
+                    </div>
+                    <div class="heading">
+                        <h3>Thumbnail</h3>
+                        <div class="text">
+                            <p>This is wider card with supporting text below as a natural lead in to additional
+                                content.This
+                                content is a little big longer.This is wider card with supporting text below as a
+                                natural lead in to additional
+                                content.This
+                                content is a little big longer</p>
+                        </div>
+                        <div class="btn1">
+                            <button>View</button>
+                            <button>Edit</button>
+                        </div>
+                    </div>
+                    <div class="heading">
+                        <h3>Thumbnail</h3>
+                        <div class="text">
+                            <p>This is wider card with supporting text below as a natural lead in to additional
+                                content.This
+                                content is a little big longer.This is wider card with supporting text below as a
+                                natural lead in to additional
+                                content.This
+                                content is a little big longer</p>
+                        </div>
+                        <div class="btn1">
+                            <button>View</button>
+                            <button>Edit</button>
+                        </div>
+                    </div>
+
+                    <div class="heading">
+                        <h3>Thumbnail</h3>
+                        <div class="text">
+                            <p>This is wider card with supporting text below as a natural lead in to additional
+                                content.This
+                                content is a little big longer.This is wider card with supporting text below as a
+                                natural lead in to additional
+                                content.This
+                                content is a little big longer</p>
+                        </div>
+                        <div class="btn1">
+                            <button>View</button>
+                            <button>Edit</button>
+                        </div>
+                    </div>
+
+                    <div class="heading">
+                        <h3>Thumbnail</h3>
+                        <div class="text">
+                            <p>This is wider card with supporting text below as a natural lead in to additional
+                                content.This
+                                content is a little big longer.This is wider card with supporting text below as a
+                                natural lead in to additional
+                                content.This
+                                content is a little big longer</p>
+                        </div>
+                        <div class="btn1">
+                            <button>View</button>
+                            <button>Edit</button>
+                        </div>
+                    </div>
+                    <div class="heading">
+                        <h3>Thumbnail</h3>
+                        <div class="text">
+                            <p>This is wider card with supporting text below as a natural lead in to additional
+                                content.This
+                                content is a little big longer.This is wider card with supporting text below as a
+                                natural lead in to additional
+                                content.This
+                                content is a little big longer</p>
+                        </div>
+                        <div class="btn1">
+                            <button>View</button>
+                            <button>Edit</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+            /* background-color:  #8F6251;  */
+            background-color: #D3B683;
+        }
+
+        .container {
+            margin: 0px 80px;
+        }
+
+        .flex-p {
+            padding: 50px 0px;
+        }
+
+        .main .heading {
+            padding: 20px 20px 30px 402px;
+        }
+
+        .main .flex-block form {
+            display: flex;
+            gap: 20px;
+            border: 2px solid black;
+            width: 600px;
+            padding-left: 20px;
+            background-color: white;
+        }
+
+
+        .main .flex-block form img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .main .heading h1 {
+            padding-left: 160px;
+            /* text-align: center; */
+            margin-bottom: 10px;
+            animation: backInDown;
+            /* referring directly to the animation's @keyframe declaration */
+            animation-duration: 2s;
+        }
+
+        .main .flex-block form .form-login h2 {
+            text-shadow: 2px 2px 4px black;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            text-align: center;
+        }
+
+        .main .flex-block form .form-login h4 {
+            color: rgb(158, 146, 146);
+            padding-bottom: 20px;
+            text-align: center;
+        }
+
+        input[type="text"] {
+            height: 30px;
+            width: 250px;
+            padding: 5px 12px;
+            border-radius: 40px;
+        }
+
+        .main .flex-block form .form-login .div1 {
+            padding-bottom: 10px;
+        }
+
+        .main .flex-block form .form-login .div2 {
+            padding-bottom: 20px;
+        }
+
+        .button {
+            height: 40px;
+            width: 280px;
+            border-radius: 40px;
+            background-color: #7b3f00;
+            text-align: center;
+            color: white;
+            font-size: 16px;
+            text-transform: capitalize;
+            border: none;
+            box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5);
+        }
+
+        .main .form-login .button:hover {
+            opacity: 1;
+        }
+
+        .main .flex-block form .form-login .btn1 {
+            padding-bottom: 30px;
+        }
+
+        .main form .form-login h4 a {
+            text-decoration: none;
+            color: rgb(158, 146, 146);
+        }
+
+        .main form .form-login .register h5 {
+            color: rgb(158, 146, 146);
+            padding: 20px 10px;
+        }
+
+        .main form .form-login .register h5 a {
+            padding-top: 20px;
+            text-decoration: none;
+            color: #A66D26;
+        }
+
+        .button:hover {
+            background-color: white;
+            color: #7b3f00;
+            animation: round 2s ease infinite alternate;
+            cursor: pointer;
+            filter: blur(0.5px);
+        }
+
+        @keyframes round {
+            0% {
+                border-top: 5px solid #7B3F00;
+                border-bottom: 5px solid #A0522D;
+                border-left: 5px solid #D2B48C;
+                border-right: 5px solid #F5DEB3;
+            }
+
+            25% {
+                border-top: 5px solid #7B3F00;
+                border-bottom: 5px solid #A0522D;
+                border-left: 5px solid #D2B48C;
+                border-right: 5px solid #F5DEB3;
+                transition: 2s all ease;
+            }
+
+            50% {
+                border-left: 5px solid #7B3F00;
+                border-bottom: 5px solid #A0522D;
+                border-right: 5px solid #d2b48c;
+                border-top: 5px solid #f5deb3;
+                transition: 2s all ease;
+            }
+
+            75% {
+                border-bottom: 5px solid #7B3F00;
+                border-right: 5px solid #A0522D;
+                border-top: 5px solid #d2b48c;
+                border-left: 5px solid #f5deb3;
+                transition: 2s all ease;
+            }
+
+            100% {
+                border-right: 5px solid #7B3F00;
+                border-top: 5px solid #A0522D;
+                border-left: 5px solid #d2b48c;
+                border-bottom: 5px solid #f5deb3;
+                transition: 2s all ease;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="flex-p">
+                <div class="heading">
+                    <h1 class="animate__animated animate__backInDown">Login in Form</h1>
+                    <div class="flex-block">
+                        <form action="" method="get" name="form1">
+                            <div class="form-login">
+                                <h2>Log in</h2>
+                                <h4>To your account</h4>
+                                <div class="div1">
+                                    <input type="text" placeholder="User Name" required>
+                                </div>
+                                <div class="div2">
+                                    <input type="text" placeholder="Password" maxlength="10" required>
+                                </div>
+                                <div class="btn1">
+                                    <button class="button" type="submit">log in</button>
+                                </div>
+                                <h4>Or <a href="">Connect with social media</a></h4>
+                                <div class="register">
+                                    <h5>Don't have an account? <a href="">Register</a>
+                                </div>
+                            </div>
+                            <div class="img">
+                                <img src="coffeeimg.jpg" alt="">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
