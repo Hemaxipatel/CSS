@@ -1,0 +1,24 @@
+@media(min-width:1200px) {
+    .container {
+        margin: 0px 80px;
+    }
+
+    header .navigation .logo {
+        flex: 1;
+    }
+
+    header .navigation .nav-list {
+        display: flex;
+        flex: 2;
+    }
+
+    header .navigation .theme {
+        padding: 0px 10px;
+        flex: 0;
+        justify-content: right;
+    }
+
+    header .navigation .theme button {
+        display: none;
+    }
+}
