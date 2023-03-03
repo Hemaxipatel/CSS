@@ -1,0 +1,54 @@
+@media(min-width:576px) {
+    .container {
+        margin: 0px 30px;
+    }
+
+    header .navigation .logo {
+        flex: 1;
+    }
+
+    header .navigation .nav-list {
+        display: none;
+    }
+
+    header .navigation .theme {
+        padding: 0px 10px;
+        flex: 0.5;
+        justify-content: right;
+    }
+
+    header .navigation .theme button {
+        display: block;
+    }
+
+
+    /* ================== home image ================ */
+
+    .home-image .homeimg-p {
+        padding: 150px 0px;
+    }
+
+    .home-image .homeimg-text h1 {
+        font-size: 35px;
+    }
+
+    .home-image .homeimg-text p {
+        width: 100%;
+    }
+
+    /* ================ best coffee for you ================== */
+
+    .best-coffee .best-coffee-flex {
+        flex-direction: column;
+    }
+
+    .best-coffee-flex .right-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ========================== product ===================== */
+
+    .product .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

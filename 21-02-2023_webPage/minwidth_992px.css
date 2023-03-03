@@ -1,0 +1,28 @@
+@media(min-width:992px) {
+    /* inherit */
+
+
+    /* ================== home image ================ */
+    .home-image .homeimg-p {
+        padding: 150px 0px;
+    }
+
+    .home-image .homeimg-text h1 {
+        font-size: 50px;
+        width: 75%;
+    }
+
+    .home-image .homeimg-text p {
+        width: 50%;
+    }
+
+    /* ================ best coffee for you ================== */
+
+    /* inherit from minwidth:768px */
+
+    /* ========================== product ===================== */
+
+    .product .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

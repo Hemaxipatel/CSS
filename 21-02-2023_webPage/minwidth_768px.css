@@ -1,0 +1,23 @@
+@media(min-width:768px) {
+    /* inherit header value from min-width:576px */
+
+
+    /* ================== home image ================ */
+    .home-image .homeimg-p {
+        padding: 200px 0px;
+    }
+
+    /* ================ best coffee for you ================== */
+
+    .best-coffee .best-coffee-flex {
+        flex-direction: column;
+    }
+
+    .best-coffee-flex .right-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* ========================== product ===================== */
+
+    /* inherit from minwidth:576px */
+}
