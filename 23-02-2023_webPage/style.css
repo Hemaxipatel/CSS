@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    margin: 0px 80px;
+}
+
+/* ========================= header ============================ */
+header {
+    background-color: #362d27;
+    position: fixed;
+    z-index: 2222;
+    width: 100%;
+}
+
+header .header-p {
+    padding: 20px 0px;
+}
+
+header .navigation {
+    display: flex;
+    align-items: center;
+}
+
+header .navigation .logo {
+    flex: 0.5;
+}
+
+header .navigation .logo a {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+header .navigation .logo a span {
+    color: #ce6d06;
+}
+
+header .navigation .nav-list {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navigation .nav-list ul {
+    display: flex;
+    gap: 20px;
+}
+
+header .navigation .nav-list ul a {
+    color: white;
+    font-weight: 500;
+}
+
+header .navigation .nav-list .search {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+header .navigation .nav-list .search span {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+header .navigation .nav-list .search button {
+    height: 40px;
+    width: 120px;
+    background-color: #ce6d06;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+header .navigation .theme {
+    padding: 0px 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+header .navigation .theme span {
+    font-size: 22px;
+    color: white;
+}
+
+header .navigation .theme button {
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: none;
+}
+
+/* ============================ Home Image ==================================== */
+.home-image {
+    background-image: url(images/img3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.home-image .homeimg-p {
+    padding: 250px 0px;
+}
+
+.home-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.556);
+    z-index: -1;
+}
+
+.home-image .homeimg-text h1 {
+    font-size: 60px;
+    width: 45%;
+    color: white;
+    padding-bottom: 15px;
+}
+
+.home-image .homeimg-text p {
+    color: white;
+    width: 50%;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+.home-image .homeimg-text button {
+    height: 50px;
+    width: 170px;
+    background-color: #ce6d06;
+    border-radius: 40px;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: 1s all ease;
+}
+
+.home-image .homeimg-text button:hover {
+    background-color: #aa5e0e;
+}
+
+/* ====================== best coffee for you ===================== */
+.best-coffee {
+    background-color: #362d27;
+}
+
+.best-coffee .best-coffee-p {
+    padding: 80px 0px;
+}
+
+.best-coffee .best-coffee-flex {
+    display: flex;
+    gap: 20px;
+}
+
+.best-coffee-flex .left-content {
+    flex: 0.4;
+}
+
+.best-coffee .best-coffee-flex .right-grid {
+    flex: 1;
+}
+
+.best-coffee-flex .left-content h5 {
+    text-transform: uppercase;
+    color: rgb(185, 178, 178);
+    padding-bottom: 20px;
+}
+
+.best-coffee .best-coffee-flex .left-content h1 {
+    text-transform: capitalize;
+    color: #EEEEEE;
+    padding-bottom: 20px;
+    font-size: 35px;
+}
+
+.best-coffee .best-coffee-flex .left-content p {
+    line-height: 25px;
+    color: rgb(109, 103, 103);
+    font-weight: 500;
+    padding-bottom: 40px;
+}
+
+.best-coffee-flex .right-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.best-coffee .best-coffee-flex .right-grid img {
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+    transition: 0.5s all linear;
+}
+
+.best-coffee .best-coffee-flex .right-grid img:hover {
+    transform: translateY(-15px);
+}
+
+.best-coffee .best-coffee-flex .left-content button {
+    height: 50px;
+    width: 170px;
+    background-color: #ce6d06;
+    border-radius: 40px;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: 1s all ease;
+}
+
+.best-coffee .best-coffee-flex .left-content button:hover {
+    background-color: #aa5e0e;
+}
+
+/* ====================== product ======================== */
+.product {
+    background-color: #231d19;
+}
+
+.product .product-p {
+    padding: 50px 0px;
+}
+
+.product .product-heading {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.product .product-heading h5 {
+    text-transform: uppercase;
+    color: rgb(165, 160, 160);
+    padding-bottom: 10px;
+}
+
+.product .product-heading h1 {
+    text-transform: capitalize;
+    color: white;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.product .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product .product-grid .grid-box {
+    /* border: 2px solid black; */
+    border-radius: 10px 10px 10px 10px;
+    background-color: #362d27;
+}
+
+.product .product-grid .grid-box .grid-img {
+    overflow: hidden;
+}
+
+.product .product-grid .grid-box .grid-img img {
+    max-width: 100%;
+    display: block;
+    /* height: auto; */
+    border-radius: 10px 10px 0px 0px;
+    transition: 1s all ease;
+    cursor: pointer;
+}
+
+.product .product-grid .grid-box .grid-img img:hover {
+    transform: scale(1.1);
+}
+
+.product .product-grid .grid-box .grid-text {
+    padding: 30px 20px;
+}
+
+.product .product-grid .grid-box .grid-text h2 {
+    padding-bottom: 10px;
+}
+
+.product .product-grid .grid-box .grid-text a {
+    color: white;
+    transition: 1s all ease;
+}
+
+.product .product-grid .grid-box .grid-text a:hover {
+    color: #ce6d06;
+}
+
+.product .product-grid .grid-box .grid-text p {
+    padding: 10px 0px;
+    line-height: 20px;
+    color: gray;
+}
+
+/* =====================================services =================================== */
+
+.services {
+    background-color: #362d27;
+}
+
+.services .service-p {
+    padding: 80px 0px;
+}
+
+.services .service-flex {
+    display: flex;
+    gap: 20px;
+}
+
+.services .service-flex .left-ser-content {
+    flex: 1;
+}
+
+.services .service-flex .left-ser-content h5 {
+    text-transform: uppercase;
+    color: gray;
+    padding-bottom: 10px;
+}
+
+.services .service-flex .left-ser-content h1 {
+    text-transform: capitalize;
+    color: white;
+    font-size: 38px;
+    padding-bottom: 20px;
+}
+
+.services .service-flex .left-ser-content p {
+    color: rgb(159, 151, 151);
+    line-height: 25px;
+    padding-bottom: 20px;
+    width: 90%;
+}
+
+.services .service-flex .left-ser-content .read-btn {
+    padding-top: 30px;
+}
+
+.services .service-flex .left-ser-content button {
+    height: 50px;
+    width: 170px;
+    background-color: #ce6d06;
+    border-radius: 40px;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: 1s all ease;
+}
+
+.services .service-flex .left-ser-content button:hover {
+    background-color: #aa5e0e;
+}
+
+.services .service-flex .right-ser-content {
+    flex: 1;
+}
+
+.services .service-flex .right-ser-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.services .service-flex .right-ser-grid .grid-1 .icon {
+    color: #ce6d06;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.services .service-flex .right-ser-grid .grid-1 h2 {
+    padding-bottom: 15px;
+}
+
+.services .service-flex .right-ser-grid .grid-1 h2 a {
+    text-transform: capitalize;
+    color: white;
+    transition: 1s all ease;
+}
+
+.services .service-flex .right-ser-grid .grid-1 h2 a:hover {
+    color: #ce6d06;
+}
+
+.services .service-flex .right-ser-grid .grid-1 p {
+    color: rgb(159, 151, 151);
+    padding: 10px 0px;
+    /* width: 50% */
+}
+
+/* ============================== coffee gallery =============================== */
+.coffee-gallery {
+    background-color: #231d19;
+}
+
+.coffee-gallery .gallery-p {
+    padding: 80px 0px;
+}
+
+.coffee-gallery .heading {
+    text-align: center;
+}
+
+.coffee-gallery .heading h5 {
+    text-transform: uppercase;
+    color: gray;
+    padding-bottom: 20px;
+}
+
+.coffee-gallery .heading h1 {
+    text-transform: capitalize;
+    color: white;
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+
+.coffee-gallery .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.coffee-gallery .gallery-grid .box {
+    position: relative;
+    overflow: hidden;
+}
+
+.coffee-gallery .gallery-grid .img-grid img {
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.coffee-gallery .gallery-grid .box .img-grid {
+    height: auto;
+    max-width: 100%;
+}
+
+.coffee-gallery .gallery-grid .box .text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    text-align: center;
+    place-content: center;
+    color: white;
+    background-color: rgba(70, 68, 68, 0.638);
+    border-radius: 10px;
+    transition: 2s all ease;
+    transform: scale(0);
+}
+
+.coffee-gallery .gallery-grid .box .text-delay {
+    transform: scale(0);
+    transition: 1s all ease;
+    transition-delay: 2s;
+}
+
+.coffee-gallery .box:hover .text {
+    transform: scale(1);
+}
+
+.coffee-gallery .box:hover .text-delay {
+    transform: scale(1);
+
+}
