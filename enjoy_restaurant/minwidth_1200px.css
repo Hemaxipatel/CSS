@@ -1,0 +1,34 @@
+/* =============== header ================== */
+
+@media (min-width:1200px) {
+    header .container {
+        margin: 0px 50px;
+    }
+
+    header .navigation .logo {
+        flex: 0.8;
+    }
+
+    header .navigation .nav-list {
+        display: flex;
+        flex: 2.5;
+    }
+
+    header .navigation .book-table {
+        display: flex;
+        flex: 0.5;
+    }
+
+    header .navigation .theme {
+        padding: 0px 10px;
+        align-items: center;
+        flex: 0.2;
+    }
+
+    header .navigation .theme .btn2 {
+        display: none;
+    }
+
+    /* ============================ home image ======================== */
+
+}

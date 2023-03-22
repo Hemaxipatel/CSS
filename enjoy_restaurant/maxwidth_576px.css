@@ -1,0 +1,73 @@
+/* =============================== header ============================== */
+@media (max-width:576px) {
+    header .container {
+        margin: 0px 30px;
+    }
+
+    header .navigation .logo {
+        flex: 2;
+    }
+
+    header .navigation .nav-list {
+        display: none;
+    }
+
+    header .navigation .book-table {
+        flex: 1;
+    }
+
+    header .navigation .theme {
+        padding: 0px 10px;
+        align-items: center;
+        flex: 0.2;
+    }
+
+    header .navigation .theme .btn2 {
+        display: block;
+    }
+
+    /* ============================ home image ======================== */
+    .container {
+        margin: 0px 30px;
+    }
+
+    .home-image .homeimg-flex {
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+    }
+
+    .home-image .homeimg-txt {
+        text-align: center;
+        /* width: 100%; */
+    }
+
+    .home-image .homeimg-txt h1 {
+        font-size: 30px;
+        padding-bottom: 14px;
+        width: 500px;
+    }
+
+    .home-image .homeimg-txt h3 {
+        padding-bottom: 115px;
+    }
+
+    .home-image .homeimg-txt .homeimg-btn {
+        justify-content: center;
+    }
+
+    .right-side-video {
+        margin: 100px auto;
+    }
+
+    .right-side-video .play-video span {
+        height: 40px;
+        width: 40px;
+    }
+
+    .home-image .homeimg-p {
+        padding: 100px 0px 100px 47px;
+    }
+
+
+}

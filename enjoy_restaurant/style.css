@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Courgette;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    margin: 0px 80px;
+    /* width: 100%; */
+    /* display: flex; */
+}
+
+/* =============================== header ============================== */
+header {
+    background-color: rgb(45, 43, 43);
+    position: fixed;
+    z-index: 3333;
+    width: 100%;
+}
+
+header .header-p {
+    padding: 20px 0px;
+}
+
+header .navigation {
+    display: flex;
+    /* gap: 20px; */
+    align-items: center;
+}
+
+header .navigation .logo {
+    flex: 0.5;
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.logo::first-letter {
+    font-size: 60px;
+}
+
+header .navigation .logo a {
+    color: white;
+}
+
+header .navigation .logo a span {
+    color: #f50537;
+}
+
+header .navigation .nav-list {
+    display: flex;
+    flex: 2.5;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-between; */
+}
+
+header .navigation .nav-list ul {
+    display: flex;
+    gap: 20px;
+}
+
+header .navigation .nav-list li a {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+header .navigation .nav-list li span {
+    color: white;
+}
+
+header .navigation .nav-list ul li a:hover {
+    color: #f50537;
+}
+
+header .navigation .book-table {
+    display: flex;
+    justify-content: end;
+    /* gap: 20px; */
+    /* flex: 2; */
+}
+
+button {
+    height: 40px;
+    width: 130px;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: white;
+    border: 2px solid #ee8312;
+    border-radius: 40px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+header .navigation .theme {
+    display: flex;
+    gap: 10px;
+    padding: 0px 10px;
+    align-items: center;
+}
+
+header .navigation .theme span {
+    color: white;
+    font-size: 22px;
+}
+
+header .navigation .theme .btn2 {
+    height: 40px;
+    width: 40px;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: none;
+}
+
+/* ============================ home image ======================== */
+.home-image {
+    background-image: url(images/home-img.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.home-image .homeimg-p {
+    padding: 164px 0px 334px 47px;
+}
+
+.home-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.520);
+    z-index: -1;
+}
+
+.home-image .homeimg-flex {
+    display: flex;
+    /* align-items: center; */
+}
+
+.home-image .homeimg-txt {
+    flex: 2;
+}
+
+.home-image .homeimg-txt h1 {
+    text-transform: capitalize;
+    color: whitesmoke;
+    font-size: 3rem;
+    padding-bottom: 14px;
+}
+
+.home-image .homeimg-txt h3 {
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding-bottom: 40px;
+    letter-spacing: 5px;
+}
+
+.home-image .homeimg-txt .homeimg-btn {
+    display: flex;
+    gap: 20px;
+    justify-content: left;
+}
+
+.right-side-video {
+    margin: auto;
+    flex: 0.4;
+}
+
+.right-side-video .play-video {
+    font-size: 35px;
+    background-color: rgba(255, 174, 0, 0.496);
+    color: white;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.right-side-video .play-video span {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 174, 0, 0.896);
+    position: absolute;
+    z-index: -1;
+    animation: video-play 2s ease infinite;
+
+}
+
+.right-side-video .play-video span:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.right-side-video .play-video span:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+
+@keyframes video-play {
+    0% {}
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+
+    }
+}
