@@ -1,0 +1,32 @@
+/* ======================header===================== */
+@media (min-width:576px) {
+    .container {
+        margin: 0px 30px;
+    }
+
+    .navigation-flex .logo {
+        flex: 1;
+    }
+
+    .navigation-flex .nav-list {
+        display: none;
+    }
+
+    .navigation-flex .theme {
+        display: flex;
+        padding: 0px 25px;
+        flex: 0.2;
+        gap: 10px;
+        justify-content: end;
+    }
+
+    /* ===================== home image ==================== */
+
+    .home-img .homeimg-txt h1 {
+        padding: 20px 50px;
+    }
+
+    .home-img .homeimg-txt p {
+        padding: 0px 55px;
+    }
+}

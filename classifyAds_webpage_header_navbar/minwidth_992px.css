@@ -1,0 +1,49 @@
+/* ==================== header =================== */
+@media (min-width:992px) {
+    .container {
+        margin: 0px 60px;
+    }
+
+    header .navigation-flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .navigation-flex .logo {
+        flex: 0.5;
+    }
+
+    .navigation-flex .nav-list {
+        display: flex;
+    }
+
+    .navigation-flex .theme {
+        display: none;
+        flex: 0.3;
+        gap: 10px;
+        align-items: center;
+        justify-content: end;
+    }
+
+
+    /* =========================== home image ======================== */
+
+    .homeimg-p {
+        padding: 100px 0px;
+    }
+
+    .home-img {
+        animation: homeimg-scroll 50s ease infinite;
+    }
+
+    .home-img .homeimg-txt h1 {
+        font-size: 40px;
+        line-height: 100px;
+        padding: 0px 30px;
+    }
+
+    .home-img .homeimg-txt p {
+        padding: 0px 30px;
+    }
+}

@@ -1,0 +1,17 @@
+/* ================= header =================== 
+
+inherit from min-width:576px */
+
+/* ===================== home image ==================== */
+.homeimg-p {
+    padding: 75px 0px;
+}
+
+.home-img .homeimg-txt h1 {
+    font-size: 35px;
+    padding: 0px 20px;
+}
+
+.home-img .homeimg-txt p {
+    padding: 0px 20px;
+}

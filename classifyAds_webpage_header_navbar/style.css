@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    margin: 0px 90px;
+}
+
+/* ==================== header ==================== */
+
+header {
+    background-color: white;
+}
+
+.header-p {
+    padding: 10px 0px;
+}
+
+header .navigation-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navigation-flex .logo {
+    flex: 0.5;
+}
+
+.navigation-flex .logo a {
+    text-transform: capitalize;
+    font-size: 35px;
+    color: black;
+}
+
+.navigation-flex .logo a span {
+    height: 60px;
+    width: 65px;
+    color: white;
+    background-color: #5ec64d;
+    text-align: center;
+    padding-top: 12px;
+    padding-left: 5px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    justify-content: center;
+}
+
+.navigation-flex .nav-list {
+    display: flex;
+    flex: 1;
+    gap: 30px;
+    justify-content: end;
+    align-items: center;
+}
+
+.navigation-flex .nav-list ul {
+    display: flex;
+    gap: 20px;
+}
+
+.navigation-flex .nav-list ul li a {
+    font-size: 18px;
+    color: #605d5d;
+}
+
+.navigation-flex .nav-list ul li a:hover {
+    color: #5ec64d;
+}
+
+.navigation-flex .nav-list .post-btn {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navigation-flex .nav-list .post-btn button {
+    height: 40px;
+    width: 170px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #f85c70;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 4px 0px 0px #f53047;
+    cursor: pointer;
+}
+
+.navigation-flex .theme {
+    display: none;
+    flex: 0.3;
+    gap: 10px;
+    align-items: center;
+    justify-content: end;
+}
+
+.navigation-flex .theme span {
+    font-size: 22px;
+    /* color: white; */
+}
+
+.navigation-flex .theme button {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    /* color: black; */
+    background: transparent;
+}
+
+/* =========================== home image ======================== */
+
+.homeimg-p {
+    padding: 230px 0px;
+}
+
+.home-img {
+    background: url(images/home-image.jpg) no-repeat;
+    background-repeat: repeat-x;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    animation: homeimg-scroll 20s ease infinite;
+}
+
+.home-img .homeimg-txt h1 {
+    font-size: 45px;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.home-img .homeimg-txt p {
+    font-size: 18px;
+    color: #eee;
+    text-align: center;
+}
+
+.home-img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(18, 17, 17, 0.401);
+    z-index: -1;
+}
+
+@keyframes homeimg-scroll {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        /* opacity: 0; */
+        background-position: 1000%;
+    }
+}
