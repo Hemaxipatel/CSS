@@ -1,0 +1,38 @@
+/* ================= header =================== 
+
+inherit from min-width:576px */
+
+/* ===================== home image ==================== */
+@media(min-width:768px) {
+    .homeimg-p {
+        padding: 75px 0px;
+    }
+
+    .home-img .homeimg-txt h1 {
+        font-size: 35px;
+        padding: 0px 20px;
+    }
+
+    .home-img .homeimg-txt p {
+        padding: 0px 20px;
+    }
+
+    /* ===================== input search ======================  */
+    input[type="text"],
+    select {
+        height: 45px;
+        width: 265px;
+    }
+
+    .search .display_grid {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .search .display_grid .search-btn button {
+        height: 45px;
+        width: 265px;
+    }
+}

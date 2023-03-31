@@ -1,0 +1,59 @@
+/* ======================header===================== */
+@media (min-width:576px) {
+    .container {
+        margin: 0px 30px;
+    }
+
+    .navigation-flex .logo {
+        flex: 1;
+    }
+
+    .navigation-flex .nav-list {
+        display: none;
+    }
+
+    .navigation-flex .theme {
+        display: flex;
+        padding: 0px 25px;
+        flex: 0.2;
+        gap: 10px;
+        justify-content: end;
+    }
+
+    /* ===================== home image ==================== */
+
+    .home-img .homeimg-txt h1 {
+        padding: 20px 50px;
+    }
+
+    .home-img .homeimg-txt p {
+        padding: 0px 55px;
+    }
+
+    /* ===================== input search ======================  */
+    input[type="text"],
+    select {
+        height: 45px;
+        width: 265px;
+    }
+
+    .search .display_grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .search .display_grid .search-btn button {
+        height: 45px;
+        width: 265px;
+    }
+
+    /* ============================ popular categories ===========================  */
+
+    .categories .category-grid1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 20px;
+    }
+}

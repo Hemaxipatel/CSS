@@ -1,0 +1,84 @@
+/* ====================== header ===================== */
+@media (max-width:576px) {
+    .container {
+        margin: 0px 10px;
+    }
+
+    .navigation-flex .logo {
+        flex: 1;
+    }
+
+    .navigation-flex .nav-list {
+        display: none;
+    }
+
+    .navigation-flex .theme {
+        display: flex;
+        padding: 0px 25px;
+        flex: 0.2;
+        gap: 10px;
+        justify-content: end;
+    }
+
+    /* ===================== home image ==================== */
+    .homeimg-p {
+        padding: 100px 0px;
+    }
+
+    .home-img {
+        animation: homeimg-scroll 50s ease infinite;
+    }
+
+    .home-img .homeimg-txt h1 {
+        font-size: 30px;
+        padding: 20px 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .home-img .homeimg-txt p {
+        font-size: 16px;
+        padding: 0px 20px;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    /* ===================== input search ======================  */
+
+    .search {
+        overflow: hidden;
+    }
+
+    input[type="text"],
+    select {
+        width: 350px;
+        font-size: 12px;
+    }
+
+    .search .display_grid .search-btn span {
+        left: 110px;
+    }
+
+    .search .display_grid .search-btn button {
+        width: 350px;
+    }
+
+    .search .display_grid {
+        justify-items: center;
+    }
+
+    .search .display_grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    /* ============================ popular categories ===========================  */
+
+    .categories .category-grid1 {
+        display: grid;
+        grid-template-columns: repeat(1fr 1fr 1fr 1fr 1fr 1fr);
+        align-items: center;
+        gap: 20px;
+        padding-top: 30px;
+    }
+}
