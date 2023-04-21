@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            height: 250px;
+            width: 250px;
+            /* border: 1px solid gray; */
+            border-radius: 10px;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="image">
+            <img src="images/img2.webp" alt="">
+        </div>
+        <div class="image">
+            <img src="images/img3.webp" alt="">
+        </div>
+        <div class="image">
+            <img src="images/img4.webp" alt="">
+        </div>
+        <div class="image">
+            <img src="images/img5.webp" alt="">
+        </div>
+        <div class="image">
+            <img src="images/img6.webp" alt="">
+        </div>
+        <div class="image">
+            <img src="images/img7.webp" alt="">
+        </div>
+        <div class="image">
+            <img src="images/img7.jpg" alt="">
+        </div>
+        <div class="image">
+            <img src="images/img8.jpg" alt="">
+        </div>
+        <div class="image">
+            <img src="images/img9.jpg" alt="">
+        </div>
+        <div class="image">
+            <img src="images/img10.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
